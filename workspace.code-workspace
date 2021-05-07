@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "./"
+		},
+    {
+      "path": "./Docker",
+      "name": "実行環境"
+    },
+    {
+      "path": "./Frontend",
+      "name": "Webクライアント"
+    },
+		{
+			"path": "./Backend",
+      "name": "APサーバー"
+		},
+    {
+      "path": "./Documents",
+      "name": "開発文書"
+    }
+	],
+	"settings": {
+		"java.configuration.updateBuildConfiguration": "automatic"
+	},
+  "extensions": {
+    "recommendations": [
+      "eamodio.gitlens",
+      "editorconfig.editorconfig",
+      "ms-azuretools.vscode-docker",
+      "marlon407.code-groovy",
+      "naco-siren.gradle-language",
+      "richardwillis.vscode-gradle",
+      "pivotal.vscode-spring-boot",
+      "vscjava.vscode-java-pack",
+      "vscjava.vscode-spring-initializr"
+    ]
+  }
+}

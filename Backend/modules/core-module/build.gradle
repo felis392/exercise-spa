@@ -1,0 +1,22 @@
+plugins {
+	id('java-library')
+  id('eclipse')
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+dependencies {
+}
+
+tasks.withType(JavaCompile) {
+  sourceCompatibility = '8'
+  targetCompatibility = '8'
+}
+
+test {
+	useJUnitPlatform()
+}
