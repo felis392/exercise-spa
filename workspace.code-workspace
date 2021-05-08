@@ -25,12 +25,17 @@
       "eamodio.gitlens",
       "editorconfig.editorconfig",
       "ms-azuretools.vscode-docker",
+      "fwcd.kotlin",
+      "formulahendry.code-runner",
       "marlon407.code-groovy",
       "naco-siren.gradle-language",
       "richardwillis.vscode-gradle",
       "pivotal.vscode-spring-boot",
       "vscjava.vscode-java-pack",
       "vscjava.vscode-spring-initializr"
+    ],
+    "unwantedRecommendations": [
+      "mathiasfrohlich.kotlin"
     ]
   }
 }

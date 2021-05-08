@@ -3,7 +3,7 @@
 ## Introduction
 
 これは **Single Page Application** を作成する練習用のリポジトリ。  
-`Docker`で構築した環境に、`Nginx`サーバーを稼働させて`Vue`で作成したWebクライアントを配信し、`Grails`で提供されるバックエンドAPIを実行する。
+`Docker`で構築した環境に、`Nginx`サーバーを稼働させて`Vue`で作成したWebクライアントを配信し、`SpringBoot`で提供されるバックエンドAPIを実行する。
 
 開発には[VS Code](https://code.visualstudio.com)を使用する。
 
