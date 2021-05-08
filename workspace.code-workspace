@@ -18,7 +18,8 @@
     }
 	],
 	"settings": {
-		"java.configuration.updateBuildConfiguration": "automatic"
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "kotlin.compiler.jvm.target": "1.8"
 	},
   "extensions": {
     "recommendations": [

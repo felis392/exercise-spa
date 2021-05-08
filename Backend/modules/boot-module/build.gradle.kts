@@ -1,5 +1,6 @@
 plugins {
 	id("war")
+  id("org.springframework.boot")
 }
 
 dependencies {
