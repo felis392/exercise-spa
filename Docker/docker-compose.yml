@@ -2,13 +2,14 @@ version: "3"
 
 services:
   nginx:
-    build:
-      context: ./nginx
-      dockerfile: Dockerfile
+    image: "nginx:latest"
     restart: "always"
     ports:
       - "80:80"
     volumes:
+      # default.conf
+      - "./nginx/conf.d/default.conf:/etc/nginx/conf.d/default.conf"
+      # docRoot
       - "./nginx.docRoot:/var/www/public"
       # app mounted on "/ledger/"
       - "../Frontend/dist:/var/www/ledger/dist"
