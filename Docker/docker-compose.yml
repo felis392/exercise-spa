@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+      dockerfile: Dockerfile
+    restart: "always"
+    ports:
+      - "80:80"
+    volumes:
+      - "./nginx.docRoot:/var/www/public"
+      # app mounted on "/ledger/"
+      - "../Frontend/dist:/var/www/ledger/dist"

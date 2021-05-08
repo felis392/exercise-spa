@@ -1,0 +1,3 @@
+nginx.docRoot/*
+!nginx.docRoot/favicon.ico
+!nginx.docRoot/index.html
