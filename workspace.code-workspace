@@ -33,7 +33,8 @@
       "richardwillis.vscode-gradle",
       "pivotal.vscode-spring-boot",
       "vscjava.vscode-java-pack",
-      "vscjava.vscode-spring-initializr"
+      "vscjava.vscode-spring-initializr",
+      "octref.vetur"
     ],
     "unwantedRecommendations": [
       "mathiasfrohlich.kotlin"
