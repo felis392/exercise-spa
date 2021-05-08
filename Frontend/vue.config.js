@@ -1,7 +1,11 @@
 module.exports = {
   lintOnSave: false,
-  indexPath: "index.html",
-  publicPath: "/ledger/",
-  assetsDir: "assets",
-  filenameHashing: false
+  indexPath: 'index.html',
+  publicPath: '/ledger/',
+  assetsDir: 'assets',
+  filenameHashing: false,
+
+  transpileDependencies: [
+    'vuetify'
+  ]
 }
