@@ -7,9 +7,9 @@ import com.example.demo.core.Sample;
 import com.example.demo.core.SampleImpl;
 
 @Configuration
-public class MyConfiguration {
+class MyConfiguration {
   @Bean
-  public Sample sample() {
-    return new SampleImpl();
-  } 
+  fun sample(): Sample {
+    return SampleImpl();
+  }
 }

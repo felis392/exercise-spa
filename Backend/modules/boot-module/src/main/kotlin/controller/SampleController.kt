@@ -9,13 +9,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RequestMapping("sample")
 @RestController
-public class SampleController {
-
-  @Autowired
-  private Sample sample;
+class SampleController(
+  private val sample: Sample
+) {
 
   @GetMapping
-  String get() {
+  fun get(): String {
     return sample.getName();
   }
 }

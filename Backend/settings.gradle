@@ -1,5 +1,0 @@
-rootProject.name = 'demo'
-file('modules').eachDir { dir ->
-  include dir.name
-  project(":${dir.name}").projectDir = dir
-}
