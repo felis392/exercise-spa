@@ -45,3 +45,11 @@ subprojects {
     plugin("org.jetbrains.kotlin.plugin.spring")
   }
 }
+
+tasks{
+  register<Copy>("deployToTomcat") {
+    dependsOn(":boot-module:bootWar")
+    from("${project(":boot-module").buildDir.path}/libs/ledger#api.war")
+    into("../Docker/tomcat.webapps")
+  }
+}

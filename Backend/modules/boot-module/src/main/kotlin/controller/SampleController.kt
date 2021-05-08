@@ -1,20 +1,19 @@
-package com.example.demo.api.controller;
+package com.example.demo.api.controller
 
-import com.example.demo.core.Sample;
+import com.example.demo.core.Sample
+import org.springframework.web.bind.annotation.GetMapping
+import org.springframework.web.bind.annotation.PathVariable
+import org.springframework.web.bind.annotation.RestController
 
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
-
-@RequestMapping("sample")
 @RestController
-class SampleController(
-  private val sample: Sample
-) {
+class SampleController(private val sample: Sample) {
 
-  @GetMapping
+  @GetMapping("sample")
   fun get(): String {
-    return sample.getName();
+    return sample.getName()
   }
+
+  @GetMapping("{path}")
+  fun echo(@PathVariable("path") path: String): String
+  = path
 }

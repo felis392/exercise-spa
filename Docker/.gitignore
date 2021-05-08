@@ -1,3 +1,6 @@
 nginx.docRoot/*
 !nginx.docRoot/favicon.ico
 !nginx.docRoot/index.html
+
+tomcat.webapps/*
+!tomcat.webapps/git*

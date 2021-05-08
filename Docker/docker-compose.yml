@@ -13,3 +13,11 @@ services:
       - "./nginx.docRoot:/var/www/public"
       # app mounted on "/ledger/"
       - "../Frontend/dist:/var/www/ledger/dist"
+  tomcat:
+    image: "tomcat:9.0.45-jdk8-adoptopenjdk-hotspot"
+    restart: "always"
+    ports:
+      - "8080:8080"
+    volumes:
+      # webapps
+      - "./tomcat.webapps:/usr/local/tomcat/webapps"

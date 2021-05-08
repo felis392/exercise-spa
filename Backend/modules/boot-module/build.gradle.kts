@@ -18,5 +18,5 @@ dependencies {
 
 tasks.withType<War> {
   enabled = true
-  archiveName = "demo#boot.war"
+  archiveName = "ledger#api.war"
 }
